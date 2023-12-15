@@ -1,6 +1,8 @@
 # GtaV_lazy_macro
 gta线上懒人菜单.主打一个懒人吃零食 护甲 叫车 保险.   
 脚本依赖ahk运行   
+## 起因   
+源仓库更新太缓慢干脆自己修修用了   
 # Use   
 自行下载并安装AHK   
 下载本仓库脚本文件GTAV_Macros.ahk    
