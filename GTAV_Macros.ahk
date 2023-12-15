@@ -98,7 +98,7 @@ DoConfirmDisconnect  := true      ; If true the ForceDisconnect action will ask 
 IntDisconnectDelay   := 10        ; Amount of seconds to freeze the process for, 10 works fine
 DoToggleCPHWithVIP   := false     ; If true ToggleVIP will become a 3-way toggle (off/on/CayoPericoHeistFinal)
 DisableCapsOnAction  := true      ; Disable caps lock before executing macros, some macros might fail if caps lock is on
-DoCheckForUpdates    := false      ; Check for script updates on startup (you can manually bind this instead or additionally)
+DoCheckForUpdates    := true      ; Check for script updates on startup (you can manually bind this instead or additionally)
 
 
 ; Internal variables (probably no need to edit)
@@ -480,7 +480,7 @@ bringGameIntoFocus(applyDelay = false) {
 ; === UPDATE ===
 ; ==============
 performUpdateCheck(silentSuccess = false) {
-  URLDownloadToFile,https://raw.githubusercontent.com/lazyoop/GtaV_lazy_macro/GTAV_Macros.ahk,update.txt
+  URLDownloadToFile,https://raw.githubusercontent.com/lazyoop/GtaV_lazy_macro/main/GTAV_Macros.ahk,update.txt
   if (errorlevel) {
     msgbox, 0, Error - GTA V Online AHK-Macros, Received error response from GitHub and update check was canceled.`nPlease retry later or check manually.`n`nHint: Set DoCheckForUpdates to false to disable automatic checking!
     FileDelete, update.txt
